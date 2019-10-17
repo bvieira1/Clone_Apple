@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 100;
+    src: local('☺︎'), url("/wss/fonts/SF-Pro-Display/v2/sf-pro-display_ultralight.woff2") format("woff2"), url("/wss/fonts/SF-Pro-Display/v2/sf-pro-display_ultralight.woff") format("woff"), url("/wss/fonts/SF-Pro-Display/v2/sf-pro-display_ultralight.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+.cta-link {
+    color: #66bbff;
+    font-size: 2.1rem;
+    display: inline-block;
+}
+
+.cta-link:nth-child(2) {
+    margin-left: 2.6rem;
+}
+
+.cta-link-darker {
+    color: #0070c9;
+}
+
+.cta-link-darker:hover {
+    color: #195485;
+}
+
+@media screen and (max-width: 1068px) {
+    .iphone-11-pro {
+        background: url('src/assets/img/hero/iphone-11-pro/iphone_11_pro_medium.jpg');
+    }
+    .iphone-11 {
+        background: url('src/assets/img/hero/iphone-11/iphone_11_medium.jpg');
+    }
+    .watch {
+        background: url('src/assets/img/hero/watch/logo_watch_medium..png');
+    }
+}
